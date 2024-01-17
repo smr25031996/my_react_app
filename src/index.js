@@ -1,4 +1,4 @@
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import App from "./App";
 import LogIn from "./login";
 import Register from "./Register";
@@ -12,6 +12,9 @@ import Home from "./home";
 import NotFound from "./not_found";
 import Navbar from "./navbar";
 import Footer from "./footer";
+import Review from "./review";
+import Profile from "./profile";
+import Cart from "./cart";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);
@@ -27,8 +30,10 @@ register.render(<Register />);
 const logIn = ReactDOM.createRoot(document.getElementById("logIn"));
 logIn.render(<LogIn />);
 
-const about = ReactDOM.createRoot(document.getElementById("about"));
+const profile = ReactDOM.createRoot(document.getElementById("profile"));
+profile.render(<Profile />);
 
+const about = ReactDOM.createRoot(document.getElementById("about"));
 about.render(<About />);
 
 const Product_list = ReactDOM.createRoot(
@@ -36,17 +41,22 @@ const Product_list = ReactDOM.createRoot(
 );
 Product_list.render(<ProductList />);
 
-const product_details=ReactDOM.createRoot(document.getElementById('product_details'));
-product_details.render(
-  <ProductDetails />
-)
+const product_details = ReactDOM.createRoot(
+  document.getElementById("product_details")
+);
+product_details.render(<ProductDetails />);
+
+const review = ReactDOM.createRoot(document.getElementById("review"));
+review.render(<Review />);
+
+const cart = ReactDOM.createRoot(document.getElementById("cart"));
+cart.render(<Cart />);
 
 const order = ReactDOM.createRoot(document.getElementById("order"));
 order.render(<Order />);
 
 const favourite = ReactDOM.createRoot(document.getElementById("fav"));
 favourite.render(<Favourites />);
-
 
 const not_found = ReactDOM.createRoot(document.getElementById("not_found"));
 not_found.render(<NotFound />);

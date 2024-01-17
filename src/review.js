@@ -1,5 +1,5 @@
 import React from "react";
 function Review(){
-    return React.createElement('h1',{},"I am Review Section");
+    return <h1>Product Review</h1>
 }
-export default Review;
+export default Review

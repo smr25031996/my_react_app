@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Favourites(){
-    return React.createElement('h1',{}," Favourite Section")
+    return <h1>Favourite Section</h1>
 }
 
 export default Favourites;

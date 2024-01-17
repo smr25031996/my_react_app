@@ -1,5 +1,5 @@
 import React from "react";
 function Footer(){
-    return React.createElement('h1',{}," Footer Section");
+    return <h1>Footer Section</h1>
 }
 export default Footer;

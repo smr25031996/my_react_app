@@ -1,5 +1,5 @@
 import React from "react";
 function ProductDetails(){
-    return React.createElement('h1',{}," Product Detail Section");
+    return <h1>Product Details Section</h1>
 }
 export default ProductDetails;
